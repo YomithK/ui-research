@@ -1,0 +1,165 @@
+@font-face {
+    font-family: "CircularStd";
+    src: url(./assets/mobile-tileset-fonts/CircularStd-Bold.woff);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "CircularStd";
+    src: url(./assets/mobile-tileset-fonts/CircularStd-Bold.woff);
+    font-weight: 700;
+}
+
+body {
+    margin: 0px;
+}
+
+.mobile_container {
+    background-color: #f5f5f5;
+    padding: 10px;
+}
+
+.head {
+    height: 460px;
+    border-radius: 10px 80px;
+    margin: 20px 20px;
+    text-align: center;
+    background-image: url(./assets/MicrosoftTeams-image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+}
+
+.slide_btns {
+    width: 200px;
+    margin: 400px auto 0 auto;
+    display: inline-block;
+}
+
+.slide_dot {
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    display: inline-block;
+    margin: 0 2px;
+    background-color: #ffffff7a;
+}
+
+.slide_dot.active {
+    background-color: #fff;
+}
+
+.body {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    margin: 20px 0px 150px 0px;
+}
+
+.tile_content {
+    width: calc(50vw - 10px - 40px);
+    height: 400px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 10px 80px;
+    box-shadow: 5px 10px 30px #1113;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tile_icon {
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+    margin-bottom: 35px;
+    border-radius: 10px 45px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+}
+
+.tile_icon.media {
+    background-image: url('data:image/svg+xml,<svg version="1.1" viewBox="0 0 20 20" width="200" height="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="fill: rgb(255, 255, 255); opacity: 1; transform: rotate(0deg) scale(0.7, 0.7);"><g><path d="M13 11V4c0-.55-.45-1-1-1h-1.67L9 1H5L3.67 3H2c-.55 0-1 .45-1 1v7c0 .55.45 1 1 1h10c.55 0 1-.45 1-1zM7 4.5c1.38 0 2.5 1.12 2.5 2.5S8.38 9.5 7 9.5 4.5 8.38 4.5 7 5.62 4.5 7 4.5zM14 6h5v10.5c0 1.38-1.12 2.5-2.5 2.5S14 17.88 14 16.5s1.12-2.5 2.5-2.5c.17 0 .34.02.5.05V9h-3V6zm-4 8.05V13h2v3.5c0 1.38-1.12 2.5-2.5 2.5S7 17.88 7 16.5 8.12 14 9.5 14c.17 0 .34.02.5.05z"></path></g></svg>');
+    background-color: #FACD4B;
+    box-shadow: 0px 5px 12px #FACD4BAA;
+}
+
+.tile_icon.settings {
+    background-image: url('data:image/svg+xml,<svg version="1.1" viewBox="0 0 20 20" width="200" height="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="fill: rgb(255, 255, 255); opacity: 1; transform: rotate(0deg) scale(0.7, 0.7);"><g><path d="M18 12h-2.18c-.17.7-.44 1.35-.81 1.93l1.54 1.54-2.1 2.1-1.54-1.54c-.58.36-1.23.63-1.91.79V19H8v-2.18c-.68-.16-1.33-.43-1.91-.79l-1.54 1.54-2.12-2.12 1.54-1.54c-.36-.58-.63-1.23-.79-1.91H1V9.03h2.17c.16-.7.44-1.35.8-1.94L2.43 5.55l2.1-2.1 1.54 1.54c.58-.37 1.24-.64 1.93-.81V2h3v2.18c.68.16 1.33.43 1.91.79l1.54-1.54 2.12 2.12-1.54 1.54c.36.59.64 1.24.8 1.94H18V12zm-8.5 1.5c1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3 1.34 3 3 3z"></path></g></svg>');
+    background-color: #F76B75;
+    box-shadow: 0px 5px 12px #F76B75AA;
+}
+
+.tile_icon.calculator {
+    background-image: url('data:image/svg+xml,<svg version="1.1" viewBox="0 0 20 20" width="200" height="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="fill: rgb(255, 255, 255); opacity: 1; transform: rotate(0deg) scale(0.7, 0.7);"><g><path d="M15 2H5c-.6 0-1 .4-1 1v14c0 .6.4 1 1 1h10c.6 0 1-.4 1-1V3c0-.6-.4-1-1-1zM6.5 16.8c-.7 0-1.2-.6-1.2-1.2s.6-1.2 1.2-1.2 1.2.6 1.2 1.2-.5 1.2-1.2 1.2zm0-3.6c-.7 0-1.2-.6-1.2-1.2s.6-1.2 1.2-1.2 1.2.6 1.2 1.2-.5 1.2-1.2 1.2zm0-3.4c-.7 0-1.2-.6-1.2-1.2s.6-1.2 1.2-1.2 1.2.6 1.2 1.2-.5 1.2-1.2 1.2zm3.5 7c-.7 0-1.2-.6-1.2-1.2s.6-1.2 1.2-1.2 1.2.6 1.2 1.2-.5 1.2-1.2 1.2zm0-3.6c-.7 0-1.2-.6-1.2-1.2s.6-1.2 1.2-1.2 1.2.6 1.2 1.2-.5 1.2-1.2 1.2zm0-3.4c-.7 0-1.2-.6-1.2-1.2s.5-1.4 1.2-1.4 1.2.6 1.2 1.2-.5 1.4-1.2 1.4zm4.8 5.7c0 .7-.6 1.2-1.2 1.2s-1.2-.6-1.2-1.2V12c0-.7.6-1.2 1.2-1.2s1.2.6 1.2 1.2v3.5zm-1.3-5.7c-.7 0-1.2-.6-1.2-1.2s.6-1.2 1.2-1.2 1.2.6 1.2 1.2-.5 1.2-1.2 1.2zM15 6.4H5V3h10v3.4z"></path></g></svg>');
+    background-color: #AA81FF;
+    box-shadow: 0px 5px 12px #AA81FFAA;
+}
+
+.tile_icon.chart {
+    background-image: url('data:image/svg+xml,<svg version="1.1" viewBox="0 0 20 20" width="200" height="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="fill: rgb(255, 255, 255); opacity: 1; transform: rotate(0deg) scale(0.7, 0.7);"><g><path d="M10 10V3c3.87 0 7 3.13 7 7h-7zM9 4v7h7c0 3.87-3.13 7-7 7s-7-3.13-7-7 3.13-7 7-7z"></path></g></svg>');
+    background-color: #4FE97A;
+    box-shadow: 0px 5px 12px #4FE97AAA;
+}
+
+.tile_icon.database {
+    background-image: url('data:image/svg+xml,<svg version="1.1" viewBox="0 0 20 20" width="200" height="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="fill: rgb(255, 255, 255); opacity: 1; transform: rotate(0deg) scale(0.7, 0.7);"><g><path d="M10 6c3.9 0 7-.9 7-2s-3.1-2-7-2-7 .9-7 2 3.1 2 7 2zm0 9c-3.9 0-7-.9-7-2v3c0 1.1 3.1 2 7 2s7-.9 7-2v-3c0 1.1-3.1 2-7 2zm0-4c-3.9 0-7-.9-7-2v3c0 1.1 3.1 2 7 2s7-.9 7-2V9c0 1.1-3.1 2-7 2zm0-4c-3.9 0-7-.9-7-2v3c0 1.1 3.1 2 7 2s7-.9 7-2V5c0 1.1-3.1 2-7 2z"></path></g></svg>');
+    background-color: #F57570;
+    box-shadow: 0px 5px 12px #F57570AA;
+}
+
+.tile_icon.games {
+    background-image: url('data:image/svg+xml,<svg version="1.1" viewBox="0 0 20 20" width="200" height="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="fill: rgb(255, 255, 255); opacity: 1; transform: rotate(0deg) scale(0.7, 0.7);"><g><path d="M15.9 5.5C15.3 4.5 14.2 4 13 4H7c-1.2 0-2.3.5-2.9 1.5-2.3 3.5-2.8 8.8-1.2 9.9 1.6 1.1 5.2-3.7 7.1-3.7s5.4 4.8 7.1 3.7c1.6-1.1 1.1-6.4-1.2-9.9zM8 9H7v1H6V9H5V8h1V7h1v1h1v1zm5.4.5c0 .5-.4.9-.9.9s-.9-.4-.9-.9.4-.9.9-.9.9.4.9.9zm1.9-2c0 .5-.4.9-.9.9s-.9-.4-.9-.9.4-.9.9-.9.9.4.9.9z"></path></g></svg>');
+    background-color: #FBD04D;
+    box-shadow: 0px 5px 12px #FBD04DAA;
+}
+
+
+.tile_name {
+    font-size: 40px;
+    font-family: "CircularStd";
+}
+
+.tile_text {
+    font-size: 30px;
+    color: #1116;
+    font-family: "CircularStd";
+}
+
+.footer {
+    height: 150px;
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    top: calc(100vh - 150px);
+    left: 0;
+}
+
+.footer-button {
+    width: 100%;
+    height: 80px;
+    border: none;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80px;
+}
+
+.footer-button.love {
+    background-image: url('data:image/svg+xml,<svg version="1.1" viewBox="0 0 16 16" width="200" height="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="fill: rgb(169, 169, 169); opacity: 1; transform: rotate(0deg) scale(0.7, 0.7);"><g><path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"></path></g></svg>');
+}
+
+.footer-button.globe {
+    background-image: url('data:image/svg+xml,<svg version="1.1" viewBox="0 0 16 16" width="200" height="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="fill: rgb(0, 0, 0); opacity: 1; transform: rotate(0deg) scale(0.7, 0.7);"><g><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"></path></g></svg>');
+}
+
+.footer-button.text {
+    background-image: url('data:image/svg+xml,<svg version="1.1" viewBox="0 0 16 16" width="200" height="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="fill: rgb(169, 169, 169); opacity: 1; transform: rotate(0deg) scale(0.7, 0.7);"><g><path d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"></path><path d="M4 5.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zM4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8zm0 2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5z"></path></g></svg>');
+}
+
+.footer-button.disc {
+    background-image: url('data:image/svg+xml,<svg version="1.1" viewBox="0 0 16 16" width="200" height="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="fill: rgb(169, 169, 169); opacity: 1; transform: rotate(0deg) scale(0.7, 0.7);"><g><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path><path d="M10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 4a4 4 0 0 0-4 4 .5.5 0 0 1-1 0 5 5 0 0 1 5-5 .5.5 0 0 1 0 1zm4.5 3.5a.5.5 0 0 1 .5.5 5 5 0 0 1-5 5 .5.5 0 0 1 0-1 4 4 0 0 0 4-4 .5.5 0 0 1 .5-.5z"></path></g></svg>');
+}

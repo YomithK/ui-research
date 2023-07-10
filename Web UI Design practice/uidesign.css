@@ -1,0 +1,167 @@
+    @font-face {
+        font-family: 'Roboto', sans-serif;
+        src: url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    }
+
+    body {
+        margin: 0px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .ui_head {
+        width: 100vw;
+        height: 80px;
+        background-color: #fff;
+        display: flex;
+    }
+
+    .ui_logo {
+        width: 80px;
+        height: 80px;
+        background-image: linear-gradient(45deg, #fb3f57, #f34987);
+    }
+
+    .ui_logo_icon {
+        width: 80px;
+        height: 80px;
+        background-image: url('data:image/svg+xml,<svg version="1.1" viewBox="0 0 24 24" width="200" height="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="fill: rgb(255, 255, 255); opacity: 1; transform: rotate(0deg) scale(0.7, 0.7);"><g><path d="M12,2C6.579,2,2,6.579,2,12s4.579,10,10,10s10-4.579,10-10S17.421,2,12,2z M14.113,15H9.986l-1.723-3.094L10.202,9h3.736 l1.871,3.062L14.113,15z M4,12c0-0.953,0.186-1.87,0.508-2.727L7.696,15H4.61C4.22,14.068,4,13.055,4,12z M16.283,9h3.106 C19.78,9.932,20,10.945,20,12c0,0.844-0.143,1.66-0.397,2.432L16.283,9z M18.188,7h-6.653l1.905-2.857 C15.326,4.502,17.002,5.546,18.188,7z M11.093,4.059L9.132,7H9v0.197L7.17,9.942L5.65,7.214C6.95,5.511,8.899,4.319,11.093,4.059z M5.812,17h7.147l-1.709,2.961C9.084,19.748,7.141,18.63,5.812,17z M13.64,19.82l3.357-5.815l1.544,2.526 C17.387,18.173,15.64,19.385,13.64,19.82z"></path></g></svg>');
+        background-position: center;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-size: 80px auto;
+    }
+
+    .ui_nav {
+        width: calc(100vw - 80px - 280px - 110px);
+        margin: 20px 10px 5px 10px;
+    }
+
+    .ui_nav li {
+        display: inline;
+        list-style: none;
+        margin: 10px;
+        font-size: 17px;
+        padding: 10px 10px;
+        color: #656567;
+    }
+
+    .ui_contact {
+        width: 270px;
+        height: 40px;
+        margin: 40px 0px 10px 10px;
+        text-align: center;
+        font-size: 17px;
+        color: #b4b7bc;
+    }
+
+    .ui_contact_number {
+        display: inline;
+        color: #c05660;
+        margin: 0px 15px;
+    }
+
+    .ui_language {
+        display: inline;
+        color: #575d5b;
+        margin: 20px 5px 10px 0px;
+    }
+
+    .ui_contactus_btn {
+        width: 100px;
+        height: 40px;
+        border: none;
+        box-shadow: 0px 3px 5px #1113;
+        border-radius: 5px;
+        margin: 30px 10px 10px 0px;
+        color: #c05660;
+        background-color: #fff;
+    }
+
+    .ui_body{
+        height: calc(100vh - 80px);
+        width: 100vw;
+        display: flex;
+    }
+
+    .ui_text_content{
+        height: 100%;
+        width: calc(100vw - 550px);
+        margin: 80px 10px 20px 40px;
+        padding: 25px 25px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ui_offer_box{
+        height: 15px;
+        width: 230px ;
+        border: 1px solid #1113;
+        background-color: #fbfaff;
+        font-size: 13px;
+        text-align: center;
+        padding: 3px;
+    }
+
+    .ui_main_text{
+        width: calc(550px - 90px);
+        font-weight: 500;
+        font-size: 57px;
+        margin-top: 25px;
+        color: #253b64;
+    }
+
+    .ui_sub_text{
+        width: calc(550px - 130px);
+        font-size: 16px;
+        margin-top: 30px;
+        line-height: 25px;
+        color: #8a8a8a;
+    }
+
+    .ui_btn_box{
+        display: flex;
+        flex-direction: row;
+        margin: 30px 0;
+    }
+    .ui_more_abt_us{
+        height: 35px;
+        width: 135px;
+        font-size: 13px;
+        text-align: center;
+        border-radius: 25px;
+        border: none;
+        background-color: #fb3d3f;
+        color: #ffcccd;
+        box-shadow: 0px 3px 5px #1113;
+    }
+    
+    .ui_demo{
+        color: #626669;
+        margin: 9px 0px 9px 30px;
+    }
+
+    .ui_btn{
+        border: none;
+        border-radius: 30px;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        margin: 0px 3px;
+        background-image: url('data:image/svg+xml,<svg version="1.1" viewBox="0 0 16 16" width="200" height="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="fill: rgb(196, 196, 196); opacity: 1; transform: rotate(0deg) scale(0.7, 0.7);"><g><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path><path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path></g></svg>');
+        background-repeat: no-repeat;
+        background-size: 50px auto;
+        background-color: transparent;
+        background-position: center;
+    }
+    
+    .ui_img_content{
+        height: 100%;
+        width: 100%;
+        background-image: url("./reshot-illustration-software-engineer-developing-an-app-CVUTPGXM57.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: transparent;
+
+    }
+    

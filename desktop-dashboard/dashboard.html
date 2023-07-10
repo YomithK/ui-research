@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="dashboard_ribbon">
+            <div class="title_logo">
+                <div class="title_logo_icon"></div>
+                <div class="logo_text">
+                    <div class="large">HYPERIO</div>
+                    <div class="small">SOFTWARE</div>
+                </div>
+            </div>
+            <div class="ribbon_search">
+                <input class="ribbon_search_input" type="text" placeholder="Search transactions,invoices or help">
+            </div>
+            <div class="ribbon_buttons">
+                <div class="ribbon_logo chat"></div>
+                <div class="ribbon_logo help"></div>
+                <div class="ribbon_logo notification ribbon_logo_unread">
+                </div>
+            </div>
+            <div class="ribbon_seperator"></div>
+            <div class="ribbon_userprofile">
+                <div class="profile_name">John Doe</div>
+                <div class="user_select"></div>
+                <div class="user_image"></div>
+            </div>
+        </div>
+        <div class="dashboard_body">
+            <div class="side_menu">
+                <div class="menu_item icon-dashboard active">
+                    Dashboard
+                </div>
+                <div class="menu_item icon-inbox">
+                    Inbox
+                </div>
+                <div class="menu_item icon-products">
+                    Products
+                </div>
+                <div class="menu_item icon-invoices">
+                    Invoices
+                </div>
+                <div class="menu_item icon-customers">
+                    Customers
+                </div>
+                <div class="menu_item icon-helpcenter">
+                    Help Center
+                </div>
+                <div class="menu_item icon-settings">
+                    Settings
+                </div>
+            </div>
+            <div class="info_menu">
+                <div class="info_content">
+                    <div class="welcome_box">
+                        <div class="welcome_title">
+                            Welcome Back
+                        </div>
+                        <div class="date">
+                            Friday, 27 September 2019
+                        </div>
+                    </div>
+                    <div class="graph_box">
+                        <div class="graph_chart">
+                            <div class="graph_top">
+                                <div class="graph_top_title">Certified Clients Chart</div>
+                                <select class="graph_top_select">
+                                    <option>Europe</option>
+                                    <option>Asia</option>
+                                    <option>USA</option>
+                                    <option>Australia</option>
+                                </select>
+                            </div>
+                            <div class="graph_image">
+                                <img src="assets/images/pie-chart.png">
+                            </div>
+                        </div>
+                        <div class="graph_chart">
+                            <div class="graph_top">
+                                <div class="graph_top_title">Net Incoming</div>
+                                <select class="graph_top_select">
+                                    <option>Last Year</option>
+                                    <option>Last Month</option>
+                                    <option>Last Week</option>
+                                </select>
+                            </div>
+                            <div class="graph_image">
+                                <img src="assets/images/bar-chart.png">
+                            </div>
+                        </div>
+                        <div class="graph_chart">
+                            <div class="graph_top">
+                                <div class="graph_top_title">Inventory Chart</div>
+                                <select class="graph_top_select">
+                                    <option>Last 6 Months</option>
+                                    <option>Last 3 Months</option>
+                                    <option>Last Month</option>
+                                </select>
+                            </div>
+                            <div class="graph_image">
+                                <img src="assets//images/graph.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table_box">
+                        <div class="table_wording">
+                            <div class="name">
+                                Certified Client Directory
+                            </div>
+                            <input class="search_bar" type="text" placeholder="Search client" />
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Telephone</th>
+                                    <th>Client type</th>
+                                    <th>Joined</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Mike Bhand</td>
+                                    <td>mikebhand@email.com</td>
+                                    <td>+358604864380</td>
+                                    <td>Retail</td>
+                                    <td>25 Apr, 2018</td>
+                                    <td>
+                                        <div class="status_box pending">
+                                            pending
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Andrew Strauss</td>
+                                    <td>info@yourmail.com</td>
+                                    <td>+358604864380</td>
+                                    <td>Retail</td>
+                                    <td>25 Apr, 2018</td>
+                                    <td>
+                                        <div class="status_box approved">
+                                            approved
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Ross Kopelman</td>
+                                    <td>rosskepelman@email.com</td>
+                                    <td>+358604864380</td>
+                                    <td>Retail</td>
+                                    <td>25 Apr, 2018</td>
+                                    <td>
+                                        <div class="status_box approved">
+                                            approved
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Mike Hussey</td>
+                                    <td>mikehussey@email.com</td>
+                                    <td>+358604864380</td>
+                                    <td>Retail</td>
+                                    <td>25 Apr, 2018</td>
+                                    <td>
+                                        <div class="status_box reject">
+                                            reject
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Kevin Pietersan</td>
+                                    <td>kpietersan@email.com</td>
+                                    <td>+358604864380</td>
+                                    <td>Retail</td>
+                                    <td>25 Apr, 2018</td>
+                                    <td>
+                                        <div class="status_box pending">
+                                            pending
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+                    <div class="slide_box">
+                        <div class="slide">
+                            <div class="slide_btn left"><<</div>
+                            <div class="slide_btn active">1</div>
+                            <div class="slide_btn">2</div>
+                            <div class="slide_btn">3</div>
+                            <div class="slide_btn">4</div>
+                            <div class="slide_btn">5</div>
+                            <div class="slide_btn">6</div>
+                            <div class="slide_btn">7</div>
+                            <div class="slide_btn">8</div>
+                            <div class="slide_btn right">>></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
