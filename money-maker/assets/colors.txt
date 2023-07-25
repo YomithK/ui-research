@@ -1,0 +1,10 @@
+Background:
+#813133
+#17222E
+
+Navbar Links:
+#94A3C0
+
+Text / Buttons:
+#FFFFFF
+#FF4237
