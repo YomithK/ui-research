@@ -1,0 +1,178 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url(assets/fonts/Montserrat-Medium.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(assets/fonts/Montserrat-Bold.ttf);
+    font-weight: 500;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: "Montserrat";
+    background-image: linear-gradient(125deg, #813133, #17222E, #17222E, #17222E, #17222E, #17222E, #17222E, #17222E, #813133);
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    height: 100vh;
+    padding: 60px;
+}
+
+.ribbon {
+    height: 60px;
+    display: flex;
+}
+
+.rib-title {
+    width: 300px;
+    line-height: 60px;
+    font-weight: 500;
+    font-size: 23px;
+}
+
+.title-1 {
+    color: #FF4237;
+}
+
+.title-2 {
+    color: #FFF;
+}
+
+.rib-title::before {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-image: url(/money-maker/assets/images/logo.svg);
+    background-repeat: no-repeat;
+    background-position: 30px 20px;
+    background-size: 28px auto;
+    content: '.';
+    color: transparent;
+}
+
+.navbar {
+    width: calc(100% - 300px - 220px);
+    display: flex;
+    line-height: 60px;
+}
+
+.nav {
+    font-size: 15px;
+    color: #94A3C0;
+    padding: 0 27px;
+    font-weight: 300;
+    white-space: nowrap;
+}
+
+.login-box {
+    width: 220px;
+    display: flex;
+    line-height: 60px;
+    text-align: center;
+}
+
+.login-text {
+    width: calc(100% - 100px);
+    color: #94A3C0;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.signup-box {
+    width: 100px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 11px;
+    background-color: #FF4237;
+    color: #FFF;
+    margin-top: 7px;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.body {
+    display: flex;
+    padding: 80px 0;
+    background-image: url(assets/images/background.svg);
+    background-repeat: no-repeat;
+    background-size: auto 90%;
+    background-position: right;
+    color: transparent;
+}
+
+.content {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.sub-text {
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.sub-text.title-1 {
+    color: #94A3C0;
+}
+
+.sub-text.title-2 {
+    color: #FF4237;
+    margin-top: 10px;
+}
+
+.main-text {
+    font-size: 45px;
+    color: #FFF;
+    line-height: 55px;
+    margin-top: 30px;
+}
+
+.red-text {
+    color: #ff4137d3;
+}
+
+.buttons {
+    display: flex;
+    margin-top: 30px;
+}
+
+.freebtn-box {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    background-color: #FF4237;
+    border-radius: 7px;
+    color: #FFF;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.demo-btn {
+    margin-left: 40px;
+    color: #FFF;
+    font-weight: 300;
+    line-height: 40px;
+    border: 1px solid #FF4237;
+    border-radius: 7px;
+    padding: 0 8px;
+    font-size: 14px;
+}
+
+.demo-btn::before {
+    height: 40px;
+    width: 20px;
+    display: inline-block;
+    background-image: url('data:image/svg+xml,<svg version="1.1" viewBox="0 0 16 16" width="200" height="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="fill: rgb(255, 255, 255); opacity: 1; transform: rotate(0deg) scale(0.7, 0.7);"><g><path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"></path></g></svg>');
+    background-repeat: no-repeat;
+    background-size: 23px auto;
+    background-position: center;
+    content: '.';
+    color: transparent;
+}
