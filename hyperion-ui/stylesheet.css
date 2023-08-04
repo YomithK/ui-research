@@ -1,0 +1,332 @@
+@font-face {
+    font-family: "DMSans";
+    src: url(./assets/fonts/DMSans-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "DMSans";
+    src: url(./assets/fonts/DMSans-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "DMSans";
+    src: url(./assets/fonts/DMSans-Bold.ttf);
+    font-weight: 700;
+}
+
+
+:root {
+    --background: #040D1B;
+    --title-color: #F4F6FD;
+    ---title-highlight-background: #0B183D;
+    ---paragraph-color: #7E8694;
+}
+
+body {
+    margin: 0;
+    background-color: var(--background);
+    color: var(--title-color);
+    font-family: "DMSans";
+}
+
+.page {
+    padding: 0 70px;
+}
+
+.ribbon {
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+    font-weight: 400;
+    font-size: 16px;
+    padding-top: 20px;
+}
+
+.rib-logo {
+    width: 200px;
+    background-image: url(./assets/images/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.navbar {
+    display: flex;
+    width: calc(100% - 180px - 250px);
+    justify-content: center;
+}
+
+.nav {
+    margin: 0 20px 0 20px;
+}
+
+.btn-box {
+    width: 250px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.btn {
+    width: 65px;
+}
+
+.btn.login {
+    color: #fff;
+    background-color: transparent;
+    border: none;
+}
+
+.btn.signup {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding: 8px;
+}
+
+.btn.cart {
+    height: 35px;
+    width: 43px;
+    background-color: transparent;
+    background-image: url(assets/images/cart.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 18px auto;
+    border: 1px solid #3959FF;
+    border-radius: 17px;
+    padding: 12px;
+    margin: 0 3px;
+}
+
+.start-content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.start-heading {
+    line-height: 70px;
+    font-size: 53px;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+.blue-text {
+    color: #3959FF;
+    background-color: #0B183D;
+    padding: 0 10px;
+    border-radius: 15px;
+}
+
+.start-text {
+    margin-top: 30px;
+    color: #7E8694;
+    line-height: 25px;
+}
+
+.start-btn {
+    width: 130px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+.start-image {
+    height: calc(100% - 185px);
+
+}
+
+.image-1 {
+    height: calc(80vw * 459 / 965);
+    width: 80vw;
+    background-image: url(assets/images/build_apps_screen_large.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-top: 40px;
+    position: relative;
+    border-radius: 20px;
+    /* margin-right: 50px; */
+}
+
+.image-2 {
+    height: 35vw;
+    width: calc(35vw * 309 / 389);
+    background-image: url(assets/images/build_apps_screen_small.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    top: 8vw;
+    left: calc(100% - calc(35vw * 309 / 389) + 7vw);
+    border-radius: 20px;
+}
+
+.feature-content {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.feat-heading {
+    line-height: 60px;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.feat-text {
+    line-height: 25px;
+    margin-top: 20px;
+    color: var(---paragraph-color);
+}
+
+.feat-tiles {
+    height: calc(100% - 105px);
+    display: flex;
+    margin-top: 45px;
+}
+
+.tile {
+    height: 175px;
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.icon {
+    height: 60px;
+    width: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px auto;
+    background-color: var(---title-highlight-background);
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.icon.performance {
+    background-image: url(assets/images/features_native_performance.svg);
+}
+
+.icon.security {
+    background-image: url(assets/images/features_security.svg);
+}
+
+.icon.ui {
+    background-image: url(assets/images/features_beautiful_uis.svg);
+}
+
+.icon.development {
+    background-image: url(assets/images/features_fast_development.svg);
+}
+
+.tile-heading {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+.tile-text {
+    color: var(---paragraph-color);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.section {
+    padding: 0 0 0 70px;
+}
+
+.builder-content {
+    padding-top: 100px;
+    display: flex;
+}
+
+.text-content {
+    width: calc(100% - 800px);
+    display: flex;
+    flex-direction: column;
+}
+
+.build-heading {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 55px;
+}
+
+.build-text {
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(---paragraph-color);
+    line-height: 28px;
+}
+
+.feature-btn {
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+.image-content {
+    width: 800px;
+    display: flex;
+}
+
+.sec-1 {
+    width: calc(100% - 500px);
+}
+
+.image-3 {
+    height: 25vw;
+    width: calc(25vw * 309 / 389);
+    background-image: url(assets/images/build_apps_screen_small.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 20px;
+    position: relative;
+    top: 15vw;
+}
+
+.sec-2 {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.image-4 {
+    height: 30vw;
+    width: calc(30vw * 965 / 459);
+    background-image: url(assets/images/build_apps_screen_large.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 20px;
+}
+
+.image-5 {
+    height: 25vw;
+    width: calc(25vw * 309 / 389);
+    background-image: url(assets/images/build_apps_screen_small.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 20px;
+    margin-top: 20px;
+}
