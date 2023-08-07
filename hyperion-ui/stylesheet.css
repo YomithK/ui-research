@@ -96,8 +96,23 @@ body {
     background-size: 18px auto;
     border: 1px solid #3959FF;
     border-radius: 17px;
-    padding: 12px;
+    padding: 8px;
     margin: 0 3px;
+}
+
+.btn.cart::after {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    padding: 1px;
+    content: '0';
+    border-radius: 10px;
+    background-color: #3959FF;
+    position: relative;
+    color: #fff;
+    top: -15px;
+    left: 20px;
+    font-size: 13px;
 }
 
 .start-content {
@@ -132,7 +147,7 @@ body {
     height: 40px;
     border: none;
     border-radius: 20px;
-    margin-top: 20px;
+    margin-top: 25px;
     font-weight: 400;
 }
 
@@ -163,7 +178,7 @@ body {
     background-size: contain;
     position: absolute;
     top: 8vw;
-    left: calc(100% - calc(35vw * 309 / 389) + 7vw);
+    left: calc(100% - calc(35vw * 309 / 389) + 9vw);
     border-radius: 20px;
 }
 
@@ -240,7 +255,6 @@ body {
 
 .tile-text {
     color: var(---paragraph-color);
-    font-size: 15px;
     font-weight: 400;
     line-height: 25px;
 }
@@ -268,7 +282,6 @@ body {
 
 .build-text {
     margin-top: 20px;
-    font-size: 15px;
     font-weight: 400;
     color: var(---paragraph-color);
     line-height: 28px;
@@ -286,6 +299,7 @@ body {
 .image-content {
     width: 800px;
     display: flex;
+    overflow: hidden;
 }
 
 .sec-1 {
@@ -330,3 +344,297 @@ body {
     border-radius: 20px;
     margin-top: 20px;
 }
+
+.instruction-content {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.instruct-head {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+.instruct-tiles {
+    display: flex;
+    margin-top: 40px;
+}
+
+.itile {
+    width: 35vw;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+}
+
+.icon.drag {
+    background-image: url(assets/images/how_drag_and_drop.svg);
+}
+
+.icon.database {
+    background-image: url(assets/images/how_database.svg);
+}
+
+.icon.deploy {
+    background-image: url(assets/images/how_deploy.svg);
+}
+
+.itile-head {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+.itile-text {
+    color: var(---paragraph-color);
+    line-height: 25px;
+    margin-top: 20px;
+}
+
+.itile.arrowdown {
+    width: 35vw;
+    background-image: url(assets/images/how_arrow_down.svg);
+    background-position: 30px 3px;
+    background-repeat: no-repeat;
+    background-size: 180px auto;
+}
+
+.itile.arrowup {
+    width: 35vw;
+    background-image: url(assets/images/how_arrow_up.svg);
+    background-position: 30px 35px;
+    background-repeat: no-repeat;
+    background-size: 180px auto;
+}
+
+.icon.drag::after {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    padding: 2px;
+    content: '1';
+    border-radius: 10px;
+    background-color: #3959FF;
+    position: relative;
+    color: #fff;
+    top: -9px;
+    left: 30px;
+    font-size: 12px;
+}
+
+.icon.database::after {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    padding: 2px;
+    content: '2';
+    border-radius: 10px;
+    background-color: #3959FF;
+    position: relative;
+    color: #fff;
+    top: -9px;
+    left: 30px;
+    font-size: 12px;
+}
+
+.icon.icon.deploy::after {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    padding: 2px;
+    content: '3';
+    border-radius: 10px;
+    background-color: #3959FF;
+    position: relative;
+    color: #fff;
+    top: -9px;
+    left: 30px;
+    font-size: 12px;
+}
+
+.ideas-content {
+    display: flex;
+    margin-top: 100px;
+}
+
+.image-container {
+    width: calc(100% - 550px);
+}
+
+.image {
+    height: 35vw;
+    width: calc(38vw * 619 / 495);
+    background-image: url(assets/images/industry_experts_screen.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 20px;
+}
+
+.itext {
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+}
+
+.itext-head {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 60px;
+}
+ .itext-para {
+    font-weight: 400;
+    color: var(---paragraph-color);
+    line-height: 23px;
+    margin-top: 20px;
+ }
+
+ .idea-box {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+ }
+
+ .idea {
+    display: flex;
+    line-height: 40px;
+    margin-top: 10px;
+ }
+
+ .idea-tick {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: var(---title-highlight-background);
+    background-image: url(assets/images/industry_experts_tick.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px auto;
+ }
+
+ .idea-text {
+    width: calc(100% - 40px);
+    font-weight: 500;
+    padding-left: 10px;
+ }
+
+ .clients-content {
+    margin-top: 100px;
+    display: flex;
+    padding: 0 8vw;
+ }
+
+ .ctext {
+    width: calc(100% - 700px);
+ }
+
+ .ctext-head {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 50px;
+ }
+
+ .ctext-para {
+    color: var(---paragraph-color);
+    font-weight: 400;
+    line-height: 23px;
+    margin-top: 20px;
+ }
+
+ .about-us {
+    margin-top: 20px;
+ }
+
+ .about-btn {
+    width: 130px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    font-weight: 400;
+ }
+
+ .comment-boxes {
+    width: 700px;
+    display: flex;
+ }
+
+ .box-col1 {
+    width: calc(100% - 350px);
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+ }
+
+ .box-1 {
+    padding: 30px;
+    background-color: #0b183d52;
+    border-radius: 20px;
+ }
+
+ .box-2 {
+    padding: 30px;
+    background-color: #0b183d52;
+    border-radius: 20px;
+    margin-top: 20px;
+ }
+
+ .box-para {
+    color: var(---paragraph-color);
+    font-size: 15px;
+    line-height: 25px;
+ }
+
+ .box-writer {
+    display: flex;
+    margin-top: 20px;
+ }
+
+ .box-quotes {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    background-color: var(---title-highlight-background);
+    background-image: url(assets/images/client_quote.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40px auto;
+ }
+
+ .writer-details {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+ }
+
+ .box-name {
+    font-weight: 700;
+    line-height: 25px;
+ }
+
+ .box-designation {
+    font-size: 15px;
+    color: var(---paragraph-color);
+ }
+
+ .box-col2 {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+ }
+
+ .box-3 {
+    padding: 30px;
+    background-color: #0b183d52;
+    border-radius: 20px;
+ }
+
+ .box-4 {
+    padding: 30px;
+    background-color: #0b183d52;
+    border-radius: 20px;
+    margin-top: 20px;
+ }
