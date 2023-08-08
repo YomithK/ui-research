@@ -486,26 +486,27 @@ body {
     font-weight: 700;
     line-height: 60px;
 }
- .itext-para {
+
+.itext-para {
     font-weight: 400;
     color: var(---paragraph-color);
     line-height: 23px;
     margin-top: 20px;
- }
+}
 
- .idea-box {
+.idea-box {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
- }
+}
 
- .idea {
+.idea {
     display: flex;
     line-height: 40px;
     margin-top: 10px;
- }
+}
 
- .idea-tick {
+.idea-tick {
     width: 40px;
     height: 40px;
     border-radius: 40px;
@@ -514,86 +515,86 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 20px auto;
- }
+}
 
- .idea-text {
+.idea-text {
     width: calc(100% - 40px);
     font-weight: 500;
     padding-left: 10px;
- }
+}
 
- .clients-content {
+.clients-content {
     margin-top: 100px;
     display: flex;
     padding: 0 8vw;
- }
+}
 
- .ctext {
+.ctext {
     width: calc(100% - 700px);
- }
+}
 
- .ctext-head {
+.ctext-head {
     font-size: 45px;
     font-weight: 700;
     line-height: 50px;
- }
+}
 
- .ctext-para {
+.ctext-para {
     color: var(---paragraph-color);
     font-weight: 400;
     line-height: 23px;
     margin-top: 20px;
- }
+}
 
- .about-us {
+.about-us {
     margin-top: 20px;
- }
+}
 
- .about-btn {
+.about-btn {
     width: 130px;
     height: 40px;
     border: none;
     border-radius: 20px;
     font-weight: 400;
- }
+}
 
- .comment-boxes {
+.comment-boxes {
     width: 700px;
     display: flex;
- }
+}
 
- .box-col1 {
+.box-col1 {
     width: calc(100% - 350px);
     display: flex;
     flex-direction: column;
     padding-right: 20px;
- }
+}
 
- .box-1 {
+.box-1 {
     padding: 30px;
     background-color: #0b183d52;
     border-radius: 20px;
- }
+}
 
- .box-2 {
+.box-2 {
     padding: 30px;
     background-color: #0b183d52;
     border-radius: 20px;
     margin-top: 20px;
- }
+}
 
- .box-para {
+.box-para {
     color: var(---paragraph-color);
     font-size: 15px;
     line-height: 25px;
- }
+}
 
- .box-writer {
+.box-writer {
     display: flex;
     margin-top: 20px;
- }
+}
 
- .box-quotes {
+.box-quotes {
     height: 50px;
     width: 50px;
     border-radius: 50px;
@@ -602,39 +603,246 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 40px auto;
- }
+}
 
- .writer-details {
+.writer-details {
     display: flex;
     flex-direction: column;
     padding-left: 10px;
- }
+}
 
- .box-name {
+.box-name {
     font-weight: 700;
     line-height: 25px;
- }
+}
 
- .box-designation {
+.box-designation {
     font-size: 15px;
     color: var(---paragraph-color);
- }
+}
 
- .box-col2 {
+.box-col2 {
     width: 350px;
     display: flex;
     flex-direction: column;
- }
+}
 
- .box-3 {
+.box-3 {
     padding: 30px;
     background-color: #0b183d52;
     border-radius: 20px;
- }
+}
 
- .box-4 {
+.box-4 {
     padding: 30px;
     background-color: #0b183d52;
     border-radius: 20px;
     margin-top: 20px;
- }
+}
+
+.blog-content {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.blog-head {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.blog-boxes {
+    display: flex;
+    margin-top: 30px;
+}
+
+.bbox {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    padding: 15px;
+}
+
+.advice1-image {
+    width: 20vw;
+    height: calc(20vw * 172 / 291);
+    background-image: url(assets/images/blog_thumb_1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 20px;
+}
+
+.blog1-image {
+    width: 20vw;
+    height: calc(20vw * 172 / 291);
+    background-image: url(assets/images/blog_thumb_2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 20px;
+}
+
+.advice2-image {
+    width: 20vw;
+    height: calc(20vw * 172 / 291);
+    background-image: url(assets/images/blog_thumb_3.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 20px;
+}
+
+.blog2-image {
+    width: 20vw;
+    height: calc(20vw * 172 / 291);
+    background-image: url(assets/images/blog_thumb_4.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 20px;
+}
+
+.bbox-type {
+    width: 70px;
+    font-size: 14px;
+    color: #3959FF;
+    line-height: 25px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: var(---title-highlight-background);
+    border: none;
+    margin-left: calc(50% - 35px);
+}
+
+.bbox-head {
+    font-weight: 700;
+    font-size: 23px;
+    margin-top: 20px;
+    line-height: 30px;
+}
+
+.bbox-date {
+    color: var(---paragraph-color);
+    margin-top: 15px;
+    line-height: 20px;
+}
+
+.join-content {
+    margin-top: 100px;
+}
+
+.join-box {
+    display: flex;
+    border-radius: 15px;
+    background-color: #3959ff;
+}
+
+.jbox-text {
+    width: 480px;
+    padding: 60px;
+
+}
+
+.jbox-head {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+.jbox-para {
+    color: #ffffff94;
+    margin-top: 25px;
+    line-height: 20px;
+}
+
+.jbox-input {
+    margin-top: 35px;
+}
+
+.input-box {
+    width: 200px;
+    background-color: #ffffff21;
+    border: none;
+    border-radius: 20px;
+    padding: 15px;
+    outline: none;
+}
+
+.input-box::placeholder {
+    color: #ffffffa0;
+}
+.join-btn {
+    width: 100px;
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.jbox-image_container {
+    width: calc(100% - 480px);
+    height: 30vw;
+    padding-top: 60px;
+    overflow: hidden;
+}
+
+.jbox-image {
+    height: 37vw;
+    width: calc(37vw * 661 / 405);
+    background-image: url(assets/images/start_your_project.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 20px;
+}
+
+.footer {
+    margin: 100px 0 70px 0;
+    display: flex;
+}
+
+.foot-context {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+}
+
+.foot-logo {
+    height: 2vw;
+    background-image: url(assets/images/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.foot-address {
+    margin-top: 25px;
+    color: var(---paragraph-color);
+    line-height: 25px;
+}
+
+.foot-email {
+    margin-top: 20px;
+    color: #fff;
+}
+
+.foot-hyperlinks {
+    width: calc(100% - 700px);
+    display: flex;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+}
+
+.hyper-head {
+    color: var(---paragraph-color);
+    margin-bottom: 25px;
+}
+
+.hyper-text {
+    margin: 5px;
+}
+
